@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A&amp;M Digital Craft | Websites for local businesses</title>
+<meta name="description" content="Freelance web developer in Hyderabad building simple, fast websites for salons, clinics, trades, restaurants and gyms in the UK, USA and India. Fixed prices, free mock-up.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A&amp;M Digital Craft | Websites for local businesses">
+<meta property="og:description" content="Get found on Google and booked on WhatsApp. Fixed-price one-page websites with a free mock-up.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/">
+<meta name="theme-color" content="#0a0f1e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0f1e'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='%236382f9'%3EA%26M%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"A&M Digital Craft","description":"Freelance web development for local businesses.","url":"https://YOUR-DOMAIN.com/","email":"info@amdigitalcraft.com","telephone":"+919177902449","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"},"areaServed":["United Kingdom","United States","India"],"priceRange":"$$"}
+</script>
+<style>
+/* ===== EDIT: ACCENT COLOURS (match your logo) ===== */
+:root{--a1:#6382f9;--a2:#3fa9f5;--ink:#0a0f1e;
+--bg:#0a0f1e;--fg:#f4f6fb;--mut:#a3abc0;--card:#111830;--line:#252e4d;--ac:#7f9bff;
+--fd:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--fb:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media(prefers-color-scheme:light){:root{--bg:#f6f7fc;--fg:#0b1020;--mut:#4a5468;--card:#fff;--line:#dde2ef;--ac:#2f50d8}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--fg);font:400 1.05rem/1.65 var(--fb);overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.05;z-index:90;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+h1,h2,h3{font-family:var(--fd);line-height:1.1;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,5vw,3.2rem);max-width:18ch;margin-bottom:1rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--a2);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4.5rem,10vw,8rem) 0}
+.lead{color:var(--mut);max-width:52ch}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid var(--line);background:none;color:var(--fg);cursor:pointer;font:600 1rem var(--fb);transition:transform .25s,border-color .2s;will-change:transform}
+.btn:hover{border-color:var(--a2)}
+.btn.p{background:linear-gradient(100deg,var(--a1),var(--a2));color:var(--ink);border-color:transparent}
+/* nav */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+header.s{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:800 1.35rem var(--fd);text-decoration:none}.logo i{font-style:normal;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{display:block;font:500 .6rem var(--fb);letter-spacing:.3em;color:var(--mut);margin-top:-4px}
+.links{display:flex;gap:1.6rem;list-style:none;padding:0}
+.links a{text-decoration:none;color:var(--mut);font-weight:500}.links a:hover{color:var(--fg)}
+.menu{display:none;background:none;border:1.5px solid var(--line);color:var(--fg);border-radius:10px;padding:.45rem .8rem;font:600 .95rem var(--fb)}
+@media(max-width:820px){.menu{display:block}.links{position:absolute;top:68px;left:0;right:0;background:var(--bg);flex-direction:column;padding:1rem 1.5rem 1.5rem;border-bottom:1px solid var(--line);display:none}.links.o{display:flex}}
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;position:relative;padding-top:110px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;animation:fl 14s ease-in-out infinite alternate;pointer-events:none}
+.b1{width:420px;height:420px;background:var(--a1);top:-80px;right:-60px}.b2{width:320px;height:320px;background:var(--a2);bottom:-60px;left:-80px;animation-delay:-6s}
+@keyframes fl{to{transform:translate3d(-40px,50px,0) scale(1.1)}}
+.hg{display:grid;gap:3rem;position:relative}
+@media(min-width:900px){.hg{grid-template-columns:1.15fr .85fr;align-items:center}}
+h1{font-size:clamp(2.6rem,7.5vw,5.4rem);font-weight:800}
+.ln{display:block;overflow:hidden;padding-bottom:.08em}.ln span{display:block;transform:translateY(110%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.ln:nth-child(2) span{animation-delay:.12s}.ln:nth-child(3) span{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.hero .lead{margin:1.5rem 0 2rem;font-size:1.2rem}.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+/* hero search demo: the memorable moment */
+.serp{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.2rem;box-shadow:0 30px 80px -30px #000a;animation:fl 9s ease-in-out infinite alternate}
+.q{display:flex;gap:.6rem;align-items:center;border:1px solid var(--line);border-radius:999px;padding:.6rem 1rem;color:var(--mut);font-size:.95rem}
+.q b{font-weight:500;color:var(--fg);animation:ty 2.2s steps(18) .8s both}
+@keyframes ty{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.res{margin-top:1rem;border-radius:14px;border:1px solid var(--line);padding:1rem;opacity:0;transform:translateY(16px);animation:up2 .7s 3.1s forwards}
+@keyframes up2{to{opacity:1;transform:none}}
+.res h3{font-size:1.15rem}.res p{color:var(--mut);font-size:.9rem}.st{color:#f5b301;letter-spacing:2px;font-size:.9rem}
+.res .btn{margin-top:.8rem;padding:.55rem 1.1rem;font-size:.9rem}
+.ghost{height:46px;border-radius:12px;background:var(--line);opacity:.45;margin-top:.8rem}
+/* cards */
+.grid{display:grid;gap:1.2rem;margin-top:3rem}
+.g4{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.6rem;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--a1)}
+.card svg.ic{width:38px;height:38px;stroke:var(--ac);fill:none;stroke-width:1.6;margin-bottom:1rem}
+.card h3{font-size:1.3rem;margin-bottom:.4rem}.card p{color:var(--mut)}
+/* work */
+.work{padding:0;overflow:hidden;transform-style:preserve-3d;will-change:transform}
+.shot{height:190px;background:linear-gradient(135deg,hsl(var(--h) 70% 55%/.35),hsl(var(--h) 80% 40%/.15));padding:18px;display:grid;gap:8px;align-content:start}
+.shot span{display:block;border-radius:8px;background:var(--bg);opacity:.75}
+.shot span:nth-child(1){height:12px;width:40%}.shot span:nth-child(2){height:62px;background:hsl(var(--h) 80% 60%/.55)}
+.shot span:nth-child(3){height:10px;width:75%}.shot span:nth-child(4){height:10px;width:55%}
+.work .in{padding:1.4rem 1.6rem 1.7rem}.work dl{display:grid;gap:.5rem;margin-top:.8rem;font-size:.97rem}
+.work dt{font-weight:600;display:inline}.work dd{display:inline;color:var(--mut);margin:0}
+.tags{margin-top:.9rem;font-size:.85rem;color:var(--ac);font-weight:500}
+.note{font-size:.88rem;color:var(--mut);margin-top:1.4rem}
+/* process */
+.tl{position:relative;margin-top:3rem;padding-left:2.4rem;display:grid;gap:2rem;max-width:640px}
+.tl::before,.tl::after{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl::after{background:linear-gradient(var(--a1),var(--a2));transform-origin:top;transform:scaleY(var(--p,0))}
+.tl li{list-style:none;position:relative}.tl li::before{content:"";position:absolute;left:-2.4rem;top:.35rem;width:24px;height:24px;border-radius:50%;background:var(--bg);border:2px solid var(--line);transition:border-color .4s,background .4s}
+.tl li.in::before{border-color:var(--a2);background:var(--a1)}
+.tl h3{font-size:1.4rem}.tl p{color:var(--mut)}
+/* pricing */
+.tog{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:4px;margin-top:1.5rem}
+.tog button{border:0;background:none;color:var(--mut);padding:.45rem 1.1rem;border-radius:999px;font:600 .95rem var(--fb);cursor:pointer}
+.tog button[aria-pressed=true]{background:linear-gradient(100deg,var(--a1),var(--a2));color:var(--ink)}
+.price{font:800 2.6rem var(--fd);margin:.6rem 0}.price small{font:400 .95rem var(--fb);color:var(--mut)}
+.card ul{padding-left:1.1rem;color:var(--mut);margin:1rem 0 1.5rem}.card.hot{border-color:var(--a2)}
+/* testimonials */
+.sl{margin-top:2.5rem;max-width:720px}.sl blockquote{display:none;font:500 clamp(1.25rem,3vw,1.7rem)/1.4 var(--fd)}
+.sl blockquote.on{display:block;animation:up2 .6s both}.sl cite{display:block;margin-top:1rem;font:400 .95rem var(--fb);color:var(--mut)}
+.dots{display:flex;gap:.6rem;margin-top:1.5rem}.dots button{width:14px;height:14px;border-radius:50%;border:2px solid var(--ac);background:none;cursor:pointer;padding:0}.dots button[aria-current=true]{background:var(--ac)}
+/* about */
+.stats{display:flex;flex-wrap:wrap;gap:2.5rem;margin:2rem 0}.stats b{display:block;font:800 2.6rem var(--fd)}.stats span{color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:1rem 0}.chips li{border:1px solid var(--line);border-radius:999px;padding:.3rem .9rem;font-size:.92rem}
+/* faq */
+details{border-bottom:1px solid var(--line);max-width:760px}summary{cursor:pointer;padding:1.2rem 0;font:600 1.15rem var(--fd);list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--ac);font-size:1.5rem;line-height:1;transition:transform .3s}details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--mut);padding-bottom:1.2rem}
+/* contact */
+form{display:grid;gap:1rem;max-width:560px}label{font-weight:600;font-size:.95rem;display:grid;gap:.35rem}
+input,textarea{background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:12px;padding:.8rem 1rem;font:inherit}
+.cg{display:grid;gap:3rem}@media(min-width:900px){.cg{grid-template-columns:1fr 1fr}}
+.ct{display:grid;gap:.8rem;align-content:start}.ct a:not(.btn){color:var(--ac)}
+#msg{font-weight:600}
+footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-size:.95rem}footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+/* cursor glow (desktop only) + reveal */
+#glow{position:fixed;left:0;top:0;width:360px;height:360px;margin:-180px 0 0 -180px;border-radius:50%;background:radial-gradient(circle,var(--a1),transparent 65%);opacity:.14;pointer-events:none;z-index:1;display:none;will-change:transform}
+@media(hover:hover) and (pointer:fine){#glow{display:block}}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.res{opacity:1;transform:none}.ln span{transform:none}html{scroll-behavior:auto}#glow{display:none!important}}
+</style>
+</head>
+<body>
+<div id="glow" aria-hidden="true"></div>
+<header id="hd"><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#top" aria-label="A&amp;M Digital Craft, home">A<i>&amp;</i>M<small>DIGITAL CRAFT</small></a>
+<button class="menu" aria-expanded="false" aria-controls="lk">Menu</button>
+<ul class="links" id="lk"><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#about">About</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="blob b1"></div><div class="blob b2"></div>
+<div class="wrap hg"><div>
+<h1><span class="ln"><span>Your customers</span></span><span class="ln"><span>are searching.</span></span><span class="ln"><span>Be the one they find.</span></span></h1>
+<p class="lead">I build simple, fast websites for local businesses. People find you on Google, tap a button, and book you on WhatsApp.</p>
+<div class="cta"><a class="btn p mag" href="#contact">Get a free mock-up</a><a class="btn mag" href="#work">See my work</a></div></div>
+<div class="serp" role="img" aria-label="Illustration: a search for a hair salon shows a business with a website and a WhatsApp booking button">
+<div class="q"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><b>hair salon near me</b></div>
+<div class="res"><h3>Bloom Hair Studio</h3><p><span class="st">★★★★★</span> 4.9 · Open now</p><p>Book in 10 seconds. Directions in one tap.</p><span class="btn p">Book on WhatsApp</span></div>
+<div class="ghost"></div><div class="ghost"></div></div>
+</div></section>
+
+<section id="services"><div class="wrap"><h2 class="rv">Everything you need to get customers online</h2>
+<p class="lead rv">No jargon, no surprise bills. Four services, one person who answers your messages.</p>
+<div class="grid g4" id="svc"></div></div></section>
+
+<section id="work"><div class="wrap"><h2 class="rv">Selected work</h2><p class="lead rv">Sample projects to show the style. Replace these with your real client work.</p>
+<div class="grid g2">
+<article class="card work rv" style="--h:330"><div class="shot" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="in"><h3>Bloom Hair Studio</h3><dl><div><dt>Problem: </dt><dd>Only on Instagram, so bookings were scattered across DMs.</dd></div><div><dt>Result: </dt><dd>Online bookings up 3x in two months.</dd></div></dl><p class="tags">HTML · CSS · WhatsApp API</p></div></article>
+<article class="card work rv" style="--h:170"><div class="shot" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="in"><h3>Greenleaf Dental Clinic</h3><dl><div><dt>Problem: </dt><dd>Patients could not find opening hours or the clinic's location.</dd></div><div><dt>Result: </dt><dd>Top 3 on Google Maps for "dentist" nearby.</dd></div></dl><p class="tags">Local SEO · Google Maps · JavaScript</p></div></article>
+<article class="card work rv" style="--h:25"><div class="shot" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="in"><h3>Spice Route Kitchen</h3><dl><div><dt>Problem: </dt><dd>Menu only existed as a photo on social media.</dd></div><div><dt>Result: </dt><dd>Phone orders doubled on weekends.</dd></div></dl><p class="tags">HTML · CSS · Click-to-call</p></div></article>
+<article class="card work rv" style="--h:215"><div class="shot" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="in"><h3>Ironworks Fitness</h3><dl><div><dt>Problem: </dt><dd>No way to join or ask about prices without visiting.</dd></div><div><dt>Result: </dt><dd>40 new trial sign-ups in the first month.</dd></div></dl><p class="tags">HTML · Formspree · Analytics</p></div></article>
+</div><p class="note">Sample projects with placeholder results. Not real clients.</p></div></section>
+
+<section id="process"><div class="wrap"><h2 class="rv">How it works</h2>
+<ol class="tl" id="tl">
+<li><h3>Mock-up</h3><p>Tell me about your business. In a few days you get a free design of your homepage. No payment, no pressure.</p></li>
+<li><h3>Build</h3><p>You like it, I build it. Text, photos, map and booking button, all tested on phones first.</p></li>
+<li><h3>Launch</h3><p>Your site goes live on your own web address and is set up so Google can find it.</p></li>
+<li><h3>Support</h3><p>Hosting, updates and quick changes for a small monthly fee. You never touch the technical bits.</p></li>
+</ol></div></section>
+
+<section id="pricing"><div class="wrap"><h2 class="rv">Fixed prices. No surprises.</h2>
+<div class="tog" role="group" aria-label="Currency"></div>
+<div class="grid g3" id="plans"></div></div></section>
+
+<section id="proof"><div class="wrap"><h2 class="rv">Kind words</h2><p class="note">Sample testimonials. Replace with real ones.</p>
+<div class="sl" id="sl" aria-live="polite">
+<blockquote class="on">“I had a website within a week, and the WhatsApp button fills my diary.”<cite>Sample client, salon owner, Manchester</cite></blockquote>
+<blockquote>“Clear prices and no tech talk. I found out about the site only when customers mentioned it.”<cite>Sample client, plumber, Texas</cite></blockquote>
+<blockquote>“We now show up on Google Maps and the phone rings more.”<cite>Sample client, clinic, Hyderabad</cite></blockquote>
+<div class="dots" role="group" aria-label="Choose testimonial"></div></div></div></section>
+
+<section id="about"><div class="wrap"><h2 class="rv">Hi, I'm the person behind A&amp;M</h2>
+<p class="lead rv">I started building websites because I saw great local shops losing customers just because nobody could find them. Now I help owners fix that, with plain talk and honest prices.</p>
+<div class="stats"><div><b data-n="4">0</b><span>services</span></div><div><b data-n="3">0</b><span>countries served</span></div><div><b data-n="7">0</b><span>days to launch</span></div></div>
+<ul class="chips"><li>HTML &amp; CSS</li><li>JavaScript</li><li>Local SEO</li><li>Google Maps</li><li>WhatsApp booking</li><li>Fast hosting</li></ul>
+<p class="lead">Based in Hyderabad, working with clients worldwide. I'm online 9am to 9pm IST, which covers your UK morning and your US evening. Messages get a reply within one working day.</p></div></section>
+
+<section id="faq"><div class="wrap"><h2 class="rv">Questions owners ask</h2>
+<details><summary>How long does it take?</summary><p>Most one-page sites go live within 7 days of you approving the mock-up.</p></details>
+<details><summary>Do I need to write the text?</summary><p>No. Send me a few notes and photos and I'll write clear copy for you.</p></details>
+<details><summary>What if I want changes later?</summary><p>Small changes are included in the monthly plan, usually done within two working days.</p></details>
+<details><summary>Do I own my website?</summary><p>Yes. Your web address and content belong to you, and you can take them elsewhere at any time.</p></details>
+<details><summary>Can we work across time zones?</summary><p>Yes. Everything runs by message and short video calls, planned around your hours.</p></details></div></section>
+
+<section id="contact"><div class="wrap cg"><div><h2 class="rv">Let's make your free mock-up</h2>
+<form id="f" action="https://formspree.io/f/xeaapwbe" method="POST">
+<label>Your name<input name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>Tell me about your business<textarea name="message" rows="4" required></textarea></label>
+<button class="btn p mag" type="submit">Send my request</button><p id="msg" role="status"></p></form></div>
+<div class="ct"><p class="lead">Prefer chat? Message me directly.</p>
+<a class="btn p mag" id="wa" href="#">Chat on WhatsApp</a><a id="em" href="#"></a>
+<p>Call: <a id="ph1" href="#"></a> · <a id="ph2" href="#"></a></p>
+<p><a id="ig" href="#">Instagram</a> · <a id="li" href="#">LinkedIn</a></p></div></div></section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> A&amp;M Digital Craft. Hyderabad, India.</span><a class="btn" href="#top">Back to top</a></div></footer>
+
+<script>
+/* ===== EDIT YOUR CONTENT HERE ===== */
+const CFG={
+ email:"info@amdigitalcraft.com",
+ whatsapp:"919177902449",            // WhatsApp number: country code + number, no + or spaces
+ phone2:"919032826335",              // second phone number (calls)
+ waText:"Hi! I'm looking website for my business.",  // message pre-filled in WhatsApp
+ instagram:"https://instagram.com/YOUR_HANDLE",
+ linkedin:"https://linkedin.com/in/YOUR_HANDLE",
+ symbols:{INR:"₹",GBP:"£",USD:"$"},
+ plans:[
+  {name:"Starter",INR:9999,GBP:149,USD:179,items:["One-page website","Mobile friendly","Click-to-call button","Free mock-up"]},
+  {name:"Local Pro",hot:1,INR:17999,GBP:299,USD:349,items:["Everything in Starter","WhatsApp booking button","Google Maps and SEO setup","Contact form"]},
+  {name:"Care Plan",INR:999,GBP:19,USD:25,per:"/month",items:["Hosting and security","Small edits each month","Priority replies"]}],
+ services:[
+  ["One-page websites","A clear, fast site that shows who you are, what you offer and how to reach you.","M3 5h18v14H3zM3 9h18"],
+  ["Google Maps and SEO","Show up when people nearby search for what you do.","M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11zM12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"],
+  ["WhatsApp booking","One tap and customers are chatting with you, ready to book.","M4 20l1.5-4A8 8 0 1 1 8 18.5z"],
+  ["Hosting and care","I keep your site online, safe and up to date every month.","M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"]]
+};
+/* ===== END EDITABLE CONTENT ===== */
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const calm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+$("#yr").textContent=new Date().getFullYear();
+$("#wa").href="https://wa.me/"+CFG.whatsapp+"?text="+encodeURIComponent(CFG.waText);
+const fmt=n=>"+"+n.slice(0,2)+" "+n.slice(2,7)+" "+n.slice(7);
+[["#ph1",CFG.whatsapp],["#ph2",CFG.phone2]].forEach(([s,n])=>{const a=$(s);a.href="tel:+"+n;a.textContent=fmt(n)});
+$("#em").href="mailto:"+CFG.email;$("#em").textContent=CFG.email;$("#ig").href=CFG.instagram;$("#li").href=CFG.linkedin;
+$("#svc").innerHTML=CFG.services.map(s=>`<article class="card rv"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="${s[2]}"/></svg><h3>${s[0]}</h3><p>${s[1]}</p></article>`).join("");
+/* pricing + currency toggle */
+let cur="INR";const tog=$(".tog"),plans=$("#plans");
+tog.innerHTML=Object.keys(CFG.symbols).map(c=>`<button aria-pressed="${c==cur}" data-c="${c}">${c}</button>`).join("");
+function drawPlans(){plans.innerHTML=CFG.plans.map(p=>`<article class="card rv in${p.hot?" hot":""}"><h3>${p.name}</h3><div class="price">${CFG.symbols[cur]}${p[cur].toLocaleString(cur=="INR"?"en-IN":"en-GB")}<small>${p.per||" one-time"}</small></div><ul>${p.items.map(i=>`<li>${i}</li>`).join("")}</ul><a class="btn${p.hot?" p":""}" href="#contact">Get started</a></article>`).join("")}
+tog.onclick=e=>{const b=e.target.closest("button");if(!b)return;cur=b.dataset.c;$$("button",tog).forEach(x=>x.setAttribute("aria-pressed",x==b));drawPlans()};drawPlans();
+/* menu + sticky nav */
+const mb=$(".menu"),lk=$("#lk");mb.onclick=()=>{const o=lk.classList.toggle("o");mb.setAttribute("aria-expanded",o)};
+lk.onclick=e=>{if(e.target.tagName=="A"){lk.classList.remove("o");mb.setAttribute("aria-expanded",false)}};
+addEventListener("keydown",e=>{if(e.key=="Escape")lk.classList.remove("o")});
+/* reveal with stagger, counters, timeline */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;
+ t.style.transitionDelay=(t.dataset.i||0)*70+"ms";t.classList.add("in");io.unobserve(t)}),{threshold:.15});
+$$(".rv,.tl li").forEach((el,i)=>{el.dataset.i=i%4;io.observe(el)});
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,n=+el.dataset.n;co.unobserve(el);
+ if(calm){el.textContent=n;return}let s;const f=t=>{s=s||t;const k=Math.min((t-s)/1200,1);el.textContent=Math.round(n*(1-Math.pow(1-k,3)));k<1&&requestAnimationFrame(f)};requestAnimationFrame(f)}));
+$$("[data-n]").forEach(el=>co.observe(el));
+const tl=$("#tl"),hd=$("#hd");let tk=0;
+function onScroll(){tk=0;hd.classList.toggle("s",scrollY>20);const r=tl.getBoundingClientRect(),h=innerHeight;
+ tl.style.setProperty("--p",Math.max(0,Math.min(1,(h*.7-r.top)/r.height)).toFixed(3))}
+addEventListener("scroll",()=>{tk||(tk=requestAnimationFrame(onScroll))},{passive:true});onScroll();
+/* testimonial slider */
+const qs=$$("#sl blockquote"),dots=$(".dots");let qi=0,qt;
+dots.innerHTML=qs.map((_,i)=>`<button aria-label="Testimonial ${i+1}" aria-current="${i==0}"></button>`).join("");
+function show(i){qi=i;qs.forEach((q,k)=>q.classList.toggle("on",k==i));$$("button",dots).forEach((b,k)=>b.setAttribute("aria-current",k==i))}
+dots.onclick=e=>{const k=$$("button",dots).indexOf(e.target);if(k>-1){show(k);clearInterval(qt)}};
+if(!calm)qt=setInterval(()=>show((qi+1)%qs.length),6000);
+/* desktop-only: cursor glow, magnetic buttons, card tilt */
+if(matchMedia("(hover:hover) and (pointer:fine)").matches&&!calm){
+ const g=$("#glow");addEventListener("pointermove",e=>{g.style.transform=`translate3d(${e.clientX}px,${e.clientY}px,0)`},{passive:true});
+ $$(".mag").forEach(b=>{b.onpointermove=e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.2}px,${(e.clientY-r.top-r.height/2)*.3}px)`};b.onpointerleave=()=>b.style.transform=""});
+ $$(".work").forEach(c=>{c.onpointermove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(800px) rotateY(${x*8}deg) rotateX(${-y*8}deg)`};c.onpointerleave=()=>c.style.transform=""})}
+/* contact form (Formspree) */
+$("#f").onsubmit=async e=>{e.preventDefault();const f=e.target,m=$("#msg");
+ if(f.action.includes("YOUR_FORM_ID")){m.textContent="Add your Formspree form ID in index.html first.";return}
+ const b=$("button[type=submit]",f);b.disabled=true;m.textContent="Sending...";
+ try{const r=await fetch(f.action,{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}});
+  if(r.ok){f.reset();m.textContent="Thanks! I'll reply within one working day."}
+  else{const d=await r.json().catch(()=>({}));
+   m.textContent=(d.errors&&d.errors.map(x=>x.message).join(" "))||d.error||"Could not send. Please email "+CFG.email+" or use WhatsApp."}
+ }catch{m.textContent="Could not send from here. Please email "+CFG.email+" or use WhatsApp.";f.submit()} /* network/CORS problem: fall back to a normal form post to Formspree */
+ b.disabled=false};
+</script>
+</body>
+</html>
